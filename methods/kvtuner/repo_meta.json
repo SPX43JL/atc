@@ -1,0 +1,6 @@
+{
+  "method": "KVTuner",
+  "origin": "https://github.com/cmd2001/KVTuner.git",
+  "commit": "96dd05eb2fe350c72c1a3dfdca04e878506f7c17",
+  "snapshot_note": "Only current Qwen2.5-7B-Instruct C4.00 and C3.92 preset files are included."
+}

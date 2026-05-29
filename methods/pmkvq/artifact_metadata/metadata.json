@@ -1,0 +1,203 @@
+{
+  "source": "pmkvq_redpajama_arxiv_stream_calibration",
+  "pmkvq_repo": "/root/atc_vllm_sched/references/kv_methods/PM-KVQ",
+  "pmkvq_commit": "c8a2bff",
+  "model_path": "/root/atc_vllm_sched/models/Qwen2.5-7B-Instruct",
+  "dataset_kind": "redpajama_stream",
+  "dataset_path": "togethercomputer/RedPajama-Data-1T",
+  "dataset_config": "arxiv",
+  "n_samples_requested": 512,
+  "n_samples_built": 512,
+  "seq_len": 2048,
+  "effective_len": 8192,
+  "stages": [
+    "rep_scales"
+  ],
+  "artifacts": {
+    "sensitivity": "/root/atc_vllm_sched/artifacts/pmkvq/redpajama_arxiv_stream_n512_l2048_eff8192/sensitivity.pt",
+    "budget": "/root/atc_vllm_sched/artifacts/pmkvq/redpajama_arxiv_stream_n512_l2048_eff8192/budget_fbit_4_2.pt",
+    "max_keys": "/root/atc_vllm_sched/artifacts/pmkvq/redpajama_arxiv_stream_n512_l2048_eff8192/max_keys.pt",
+    "rep_scales": "/root/atc_vllm_sched/artifacts/pmkvq/redpajama_arxiv_stream_n512_l2048_eff8192/rep_scales_k4v4.pt",
+    "calib_dataset": "/root/atc_vllm_sched/artifacts/pmkvq/redpajama_arxiv_stream_n512_l2048_eff8192/calib_dataset_tokenized.jsonl"
+  },
+  "status": "complete",
+  "notes": [],
+  "rep_scales": {
+    "path": "/root/atc_vllm_sched/artifacts/pmkvq/redpajama_arxiv_stream_n512_l2048_eff8192/rep_scales_k4v4.pt",
+    "k_bits": 4,
+    "v_bits": 4,
+    "grid": 20,
+    "batch_size": 4,
+    "num_layers": 28,
+    "scale_shapes": [
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ],
+      [
+        1,
+        4,
+        1,
+        64
+      ]
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "method": "KIVI",
+  "origin": "https://github.com/jy-yuan/KIVI.git",
+  "commit": "876b4d2d08e3b1d5f70d0969c299d8c7c42ddfb6",
+  "snapshot_note": "Only current LongBench prompt/maxlen configs and ATC mapping notes are included."
+}

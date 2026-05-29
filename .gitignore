@@ -1,0 +1,59 @@
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.venv/
+.venv_dev/
+venv/
+
+# Large model / binary artifacts
+/models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+*.engine
+*.so
+*.whl
+
+# Data, logs, and intermediate outputs
+/data/
+/logs/
+/downloads/
+/backups/
+/.modelscope_cache/
+/references/
+/artifacts/
+/docs_patch_tmp/
+*.jsonl
+*.log
+*.pid
+*.tmp
+*.orig
+
+# Result files that should not enter the public snapshot
+results/deprecated_kernel_int4/
+results/fake_quant/diagnostic/
+**/smoke_*.json
+**/retry_backup/
+**/*.failed*.bak
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

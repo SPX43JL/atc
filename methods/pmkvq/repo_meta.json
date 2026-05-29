@@ -1,0 +1,6 @@
+{
+  "method": "PM-KVQ",
+  "origin": "https://github.com/thu-nics/PM-KVQ.git",
+  "commit": "c8a2bff80628a3c476c057aa42e13d5e5c55196f",
+  "snapshot_note": "Only current RedPajama arXiv mem132 metadata and ATC mapping notes are included."
+}

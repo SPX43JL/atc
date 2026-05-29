@@ -1,0 +1,6 @@
+{
+  "method": "KVQuant",
+  "origin": "https://github.com/SqueezeAILab/KVQuant.git",
+  "commit": "57a238357f0ffe50084670fcd5781c9848f80ea2",
+  "snapshot_note": "Only current NUQ artifact metadata and ATC mapping notes are included."
+}

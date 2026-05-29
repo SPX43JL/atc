@@ -1,0 +1,40 @@
+{
+  "source": "kvquant_official_simquant_nuq_qwen25_wrapper",
+  "kvquant_repo": "/root/atc_vllm_sched/references/kv_methods/KVQuant",
+  "kvquant_commit": "57a2383",
+  "simquant_source": "official:quant",
+  "model_path": "/root/atc_vllm_sched/models/Qwen2.5-7B-Instruct",
+  "calib_jsonl": "/root/atc_vllm_sched/artifacts/kvquant/wikitext2_qwen25_n16_l2048/calib_dataset_tokenized.jsonl",
+  "calib_jsonl_sha256": "f20f63e4f8e20fb92a4af7fba003930d6b876a5da075e4bc2d7c599ebfd4baec",
+  "sample_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "dataset": "Wikitext-2 prepared from Salesforce/wikitext",
+  "num_examples": 16,
+  "seq_len": 2048,
+  "bits": 3,
+  "sparsity_threshold": 0.99,
+  "first_few_fp16": 1,
+  "artifact_files": [
+    "nuq_artifact.pt",
+    "metadata.json"
+  ],
+  "nuq_artifact_sha256": "636ff8f76e063009d328256ee74b808bf92b0eef46802f1982c4ae398a0e0d94",
+  "nuq_artifact_complete": true,
+  "runtime_note": "Qwen2 pre-RoPE K fake quant consumes the key entries; vLLM reshape_and_cache consumes the value entries."
+}
