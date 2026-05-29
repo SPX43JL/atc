@@ -13,6 +13,9 @@ reduction, CUDA/Triton kernel acceleration, or real low-bit serving kernels.
 - Current ATC fake-quant code and vLLM integration points.
 - Serving, benchmark, manifest, artifact-building, and summarization scripts.
 - Latest useful KIVI, KVTuner, KVQuant, and PM-KVQ method configs/metadata.
+- Method-specific fake-quant implementations split under
+  `vllm_src/vllm/attention/ops/atc_kv_fake_quant/methods/`, with `core.py`
+  kept as the unified vLLM hook entry point.
 - Minimal official reference scripts for the four methods under
   `methods/*/reference_scripts/`, so reviewers can inspect the paper/repo
   mechanism that the ATC fake-quant path approximates.
@@ -106,7 +109,7 @@ Method-specific reproduction helpers:
 
 - KIVI/KVTuner: current variants are configured in
   `scripts/run_formal_multitask_pipeline.sh` and implemented in
-  `vllm_src/vllm/attention/ops/atc_kv_fake_quant/`.
+  `vllm_src/vllm/attention/ops/atc_kv_fake_quant/methods/`.
 - KVQuant: use `scripts/run_kvquant_nuq_artifact.py` for the current NUQ
   artifact path; `scripts/run_kvquant_official_calibration.py` is kept as the
   useful Fisher/official-wrapper reference used during alignment.
